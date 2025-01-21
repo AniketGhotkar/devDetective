@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather sans' ,sans-serif;
+}
+
+/* html, body {
+    overflow-x: hidden; 
+    overflow-y: auto;   
+} */
+
+:root {
+    --colorDark1 : #112D4E;
+    --colorDark2 : #3f72af;
+    --colorLight1 : #DBE2EF;
+    --colorLight2 : #F9F7F7;
+}
+
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    color: var(--colorDark2);
+    background-image: linear-gradient(160deg,#c6c9ce,#3f72af 200%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 2rem;
+}
+
+
+.form-container {
+    display: flex;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.form-container input {
+    all : unset;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba(92, 93, 96, 0.5);
+    border-radius: 10px;
+}
+
+.form-container  input::placeholder {
+    color : rgba(255, 255, 255, 0.7);   
+}
+
+.form-container input:focus {
+    outline: 3px solid rgba(255,255,255,0.7);
+}
+
+.form-container .btn {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: rgba(92, 93, 96, 0.7); /* Optional: added background */
+    cursor: pointer; /* Optional: add pointer cursor for button */
+}  
+
+.loading-container {
+    display: none;
+}
+
+.loading-container.active {
+    display: flex;
+    
+}
+
+.loading-container p {
+    text-transform: uppercase;
+}
+
+.loading-container img {
+    margin-bottom: 1rem;
+}
+
+
+.user-info-container {
+    display: none;
+}
+
+.user-info-container.active {
+    display: flex;
+    align-items: self-start;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Left section (Profile Image) */
+.user-info-container .left {
+    margin-right: 20px;
+  }
+
+
+.user-info-container .left img {
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+/* Right section (User Info) */
+.user-info-container .right {
+    flex: 1;
+  }
+
+  .user-info-container .userName {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .user-info-container .userName h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+
+  .user-info-container .userName p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+  }
+
+
+/* Description */
+.user-info-container p[data-decription] {
+    font-size: 16px;
+    color: #444;
+    margin: 20px 0;
+  }
+  
+  /* Popularity info */
+  .user-info-container .user-popularity-info {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 20px; */
+    margin-top: 20px;
+  }
+  
+  .user-info-container .parameter {
+    text-align: center;
+  }
+  
+  .user-info-container .parameter p {
+    margin: 0;
+    font-size: 15px;
+    color: #555;
+  }
+  
+  .user-info-container .parameter span {
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+
+
+  /* Additional Information */
+.user-info-container .additional-information {
+    margin-top: 20px;
+    color: #777;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    /* padding-bottom: 10px; Added padding to create gap/ */
+}
+.additional-information div {
+    display: none;
+}
+/* Styling for each section inside additional information */
+.user-info-container .additional-information div.active {
+    display: flex;
+    margin-bottom: 5px;
+    /* padding-bottom: 10px; */
+    /* padding-left: 10px; Add padding to the left */
+}
+
+/* Styling for Location */
+.user-info-container .additional-information p[data-location] {
+    margin-right: 20px;
+    padding-left: 10px; /* Add padding to the left of location text */
+}
+
+/* All Social section */
+.user-info-container .allSocial {
+    display: flex;
+    font-size: 14px;
+    gap: 50px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px; /* Add padding to the bottom for space between content and border */
+    padding-left: 10px; /* Add padding to the left */
+}
+
+.media {
+    margin-bottom: 5px;
+}
+
+
+
+
+

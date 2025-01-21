@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <link rel="stylesheet" href="sytyle.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>DevDetective</h1>
+
+        <form action="" class="form-container" data-searchForm>
+            <input type="text" placeholder="Enter your user name" data-searchInput>
+            <button type = "submit" class="btn">
+                <img src="searchimage.png" alt="search" width="20" height="20" loading="lazy">
+            </button>
+        </form>
+
+            <!-- loading screen container -->
+        <div class=" sub-container loading-container">
+            <img src="loading.png" alt="loading" width="150" height="150">
+            <p>loading</p>
+        </div>        
+
+        <div class="user-info-container">
+            <div class="left">
+                <img data-profileImage height="50" width="50">
+            </div>
+
+            <div class="right">
+                <div class="userName">
+                    <h2 data-name></h2> 
+
+                    <p data-datejoined></p>
+                </div>
+    
+                <link rel="stylesheet">
+    
+                <p data-decription></p>
+    
+                <div class="user-popularity-info">
+                    <div class="parameter">
+                        <p class="repos">Repositories</p>
+                        <span class="repos-count"></span>
+                    </div>
+    
+                    <div class="parameter">
+                        <p class="follwers">Followers</p>
+                        <span class="follwers-count"></span>
+                    </div>
+    
+                    <div class="parameter">
+                        <p class="following">Following</p>
+                        <span class="following-count"></span>
+                    </div>
+                </div>
+    
+                <div class="additional-information">
+                    <div location>
+                        <h3>Location : </h3>
+                        <p data-location></p>
+                    </div>
+
+                    <h3 class="media">Social Media</h3>
+                    <ul class="allSocial">
+                        <li><a href="#" data-twitter target="_blank">Twitter</a></li>
+                        <li><a href="#" data-github target="_blank">GitHub</a></li>
+                        <li><a href="#" data-linkedin target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
